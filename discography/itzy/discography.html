@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+<title>:: ITZY | Discorgraphy ::</title>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0"><!---->
+<meta name="keywords" content="ITZY,jyp,jypidol" />
+
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<link href="css/discography.css" rel="stylesheet" type="text/css">
+<link href="css/navigator.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" charset="utf-8" src="//code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function() { 
+		$('.snip1477').click(function(){	
+			lightBoxOpen($(this).attr("id"));
+		});
+		$('#lightbox').click(function(){
+			lightBoxClose();
+		});
+	}) 
+	function lightBoxOpen(id){
+		$(document).ready(function(){
+			$("#lightbox").load(id + ".html");   
+		});
+		$('#lightbox').removeAttr('class');
+		$('#lightbox').attr('class', 'active');
+	}
+	function lightBoxClose(){
+		$('#lightbox').removeAttr('class');
+	}
+</script>
+
+<style type="text/css">
+nav{background-color:#fff;
+	position: relative;
+
+	}/**/
+.navmenu{
+	margin:0 auto;
+	max-width:1000px;
+	z-index:-11;
+	/*background-color: #06F;*/
+	}	
+
+body{
+	margin:0;
+	padding:0;
+	background:#f4f4f4;}
+	
+#sect-title{
+	background-image:url(images/title-discography.png);
+}
+
+</style>
+</head>
+
+<body>
+<nav>
+	<div class="header clearfix" style="background-color:#000;">
+	<h1><a href="../../index/itzy/index.html" class ="itzy">ITZY</a></h1>
+	<div class="nav">
+	<input type="checkbox" id="toggle" />
+	<label for="toggle" class="toggle" onclick></label>
+	<ul class="menu">
+	<li><a href="../../profile/itzy/profile.html">PROFILE</a></li>
+	<li><a href="../../discography/itzy/discography.html">DISCOGRAPHY</a></li>	
+	<li><a href="../../gallery/itzy/gallery.html">GALLERY</a></li>
+	<li><a href="../../video/itzy/video.html">VIDEO</a></li>			
+	</ul>
+	</div><!-- End of Navigation -->
+	</div><!-- End of Header -->
+</nav>
+
+<div class="container clearfix"> 
+<div class="main">
+<div id="lightbox">
+</div>		
+
+<section>
+<div id="sect-title">DISCOGRAPHY</div>
+<div id="sect-main">
+	<div class="album-list"> 
+		<ul>
+			<li>
+				<figure id="1" class="snip1477"><img src="images/1.jpg" alt="sample38" />
+				<div class="title">
+					<div>
+						<h2>IT'z ME</h2>
+						<h4>2020.03.09</h4>  
+					</div>
+				</div>
+				<figcaption>
+					<p>
+						ITZY, 3월 9일 두 번째 미니앨범 'IT'z ME' 및 타이틀곡 'WANNABE' 발표!<br><br>
+						'one & only ME'<br>
+						"난 그냥 나일 때 완벽하니까"<br>
+						- 새 앨범 'IT'z ME' = ITZY 시그니처 앨범! 괴물 신인→대세 걸그룹 발돋움...
+					</p>
+				</figcaption>							
+				</figure>
+			</li>
+
+			<li>
+				<figure id="2" class="snip1477"><img src="images/2.jpg" alt="sample91" />
+					<div class="title">
+						<div>
+							<h2>IT'z ICY</h2>
+							<h4>2019-07-29</h4>  
+						</div>
+					</div>
+					<figcaption>
+						<p>
+							2019 최고 신인' ITZY, 뜨거운 열정 담은 새 앨범 'IT'z ICY' 발매!<br><br>
+							- ITZY, K팝 新 지평 제시 'JYP 4세대 걸그룹' 가요계 접수 예고!<br>
+							- 신곡 'ICY', JYP 박진영과 ITZY의 첫 만남...
+						</p>
+					</figcaption>			
+				</figure>
+			</li>
+
+			<li>
+				<figure id="3" class="snip1477"><img src="images/3.jpg" alt="sample35" />
+				<div class="title">
+					<div>
+						<h2>IT’z Different</h2>
+						<h4>2019-02-12</h4>  
+					</div>
+				</div>
+				<figcaption>
+					<p>
+						'JYP 5인조 신인 걸그룹' ITZY, 타이틀곡 '달라달라' 발매!<br><br>
+						- "2019 가요계 끝판왕 걸그룹의 등장"...ITZY, 데뷔곡 '달라달라'로 남다른 존재감 발휘<br>
+						- '달라달라', 그룹 ITZY의 아이덴티티 표현한 퓨전 그루브 사운드...
+					</p>
+				</figcaption>			
+				</figure>
+			</li>
+		</ul>
+	</div>
+</div><!--sect-main-->
+</section>
+
+<footer>
+	<div id="footer">
+		<div class="kyslogo"><a href="../../main/index.html">KYS Entertainment</a></div>
+		<div class="snsicon">
+			<a href="https://www.instagram.com/itzy.all.in.us" class="instagram">Instagram</a>
+			<a href="http://www.twitter.com/ITZYOfficial" class="twitter">Twitter</a>
+			<a href="http://www.facebook.com/OfficialITZY" class="facebook">Facebook</a>
+			<a href="https://www.youtube.com/c/ITZY" class="youtube">Youtube</a>
+		</div>
+	</div>
+</footer>
+</div><!-- main-->
+</div> <!--container-->
+</body>
+</html>

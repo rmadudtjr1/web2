@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0"><!---->
+<!--<meta name="viewport" content="width=device-width"> -->
+<title>:: JYP | Gallery  ::</title>
+<meta name="keywords" content="JYP" />
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<link href="css/gallery.css" rel="stylesheet" type="text/css">
+<link href="css/navigator.css" rel="stylesheet" type="text/css">
+
+<script src="js/galleryscript.js"></script>
+<script type="text/javascript" charset="utf-8" src="//code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+<script type="text/javascript" src="js/jquery.fancybox-media.js?v=1.0.6"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+$('#wrapper').fadeIn(1000);
+});
+$(document).ready(function() {
+
+
+
+$('.fancybox').fancybox();
+$(".fancybox-effects-a").fancybox({
+helpers: {
+title : {
+type : 'outside'
+},
+overlay : {
+speedOut : 0
+}
+}
+});
+
+
+
+/* Media helper */
+$('.fancybox-media')
+.attr('rel', 'media-gallery')
+.fancybox({
+openEffect : 'none',
+closeEffect : 'none',
+prevEffect : 'none',
+nextEffect : 'none',
+arrows : false,
+helpers : {
+media : {},
+buttons : {}
+}
+});
+});
+</script>
+
+
+<style type="text/css">
+
+nav{
+	position: relative;
+
+	}/**/
+.navmenu{
+	margin:0 auto;
+	max-width:1000px;
+	z-index:-11;
+	/*background-color: #06F;*/
+	}	
+
+body{
+	margin:0;
+	padding:0;
+	background:#f4f4f4;}
+	
+#sect-title{
+	background-image:url(images/title-gallery.png);}
+
+	
+</style>
+	<script type="text/javascript">
+/* 			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-46828308-45']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+
+				ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})(); */
+	</script>
+</head>
+
+<body onload="main();">
+<div id="wrapper">
+	<div class="container clearfix"> 
+		<div class="main">
+			<nav>
+				<div class="header clearfix" style="background: none;   box-shadow: 0 1px 7px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.2);">
+					<h1><a href="../../index/jyp/index.html">JYP</a></h1>
+					<div class="nav">
+						<input type="checkbox" id="toggle" />
+						<label for="toggle" class="toggle" onclick></label>
+						<ul class="menu">
+							<li><a href="../../profile/jyp/profile.html">PROFILE</a></li>
+							<li><a href="../../discography/jyp/discography.html">DISCOGRAPHY</a></li>	
+							<li><a href="gallery.html">GALLERY</a></li>
+							<li><a href="../../video/jyp/video.html">VIDEO</a></li>		
+<!-- 							<li><a href="notice.asp">NOTICE</a></li>	
+							<li><a href="schedule.asp">SCHEDULE</a></li>	 -->
+						</ul>
+					</div><!-- End of Navigation -->
+				</div><!-- End of Header -->
+			</nav>
+			<div class="clear"></div>
+
+			<section>
+				<div id="sect-title">GALLERY</div>
+				<div id="sect-main">
+					<div class="fullbox">
+						<div class="photos">
+							<ul id="clearfix" class="clearfix">
+									<!-- loop -->
+							</ul>
+						</div><!-- photos-->
+
+						<div id="list-nav">
+							<ul id="list-nav-Btn">
+								<li><a class="list-nav-on">1</a></li>
+
+								<li><a class="list-nav-off">2</a></li>					
+							</ul>
+						</div>
+						<!-- //paging -->
+					</div><!--fullbox--><!--album-list-->
+				</div><!--sect-main-->
+			</section>
+
+			<footer>
+				<div id="footer">
+					<div class="kyslogo"><a href="../../main/index.html">KYS Entertainment</a></div>
+					<div class="snsicon">
+						<a href="https://www.instagram.com/asiansoul_jyp" class="instagram">Instagram</a>
+						<a href="http://twitter.com/followjyp" class="twitter">Twitter</a>
+						<a href="http://facebook.com/followjyp" class="facebook">Facebook</a>
+						<a href="http://www.youtube.com/user/jypark" class="youtube">Youtube</a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</footer>
+		</div><!-- main-->
+	</div> <!--container-->
+</div><!----><!--wrapper-->
+
+</body>
+
+</html>

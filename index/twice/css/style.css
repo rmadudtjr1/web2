@@ -1,0 +1,169 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans+Std+Light);
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css); 
+
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	overflow: hidden;
+}
+
+#background .basic{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	padding: 0;
+	margin: 0;
+	background-image: url(../images/bg-pc.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.mainlogo{
+	position: absolute;
+	width: 350px;
+	height: 185px;
+	background: url(../images/mainlogo.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	top: 50%;
+	margin-top: -92px;
+	right: 50%;
+	margin-right: -175px; 
+	/* transform: translate(-50%, -50%); */ /* 중앙정렬 */
+	padding: 0;
+	opacity: 1;
+	z-index: 50;
+}
+
+#header{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	min-height: 100px;
+	padding: 0 20px;
+	z-index: 1;
+	background-color: #00000000;
+	box-shadow: 0 1px 7px rgba(0, 0, 0, 0.2);
+}
+
+#header .logo{
+	display: block;
+	float: left;
+}
+
+#header .logo a{
+	display: block;
+	width: 110px;
+	height: 48px;
+	padding: 25px 5px;
+	z-index: 2;
+	background-image: url(../images/logo-s.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	text-indent: -9999px;
+}
+
+#header .menu{
+	margin-right: 3rem;
+	margin-top: 0;
+}
+
+#header .menu,
+#header .menu > li,
+#header .menu > li > a{
+	display: block;
+	float: right;
+	height: 100%;
+}
+
+#header .menu > li > a{
+	margin: 0;
+	padding: 42px 18px;
+	text-decoration: none;
+	font-family: 'Oswald', sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+	color: #ccad56;
+	line-height: 1;
+	box-sizing: border-box;
+}
+
+#footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 57px;
+	z-index: 1;
+	background-image: none;
+	background-image: url(../images/footerbg.png);
+}
+
+#footer .kyslogo a{
+	position: relative;
+	display: block;
+	width: 168px;
+	height: 38px;
+	background-image: url(../images/kyslogo.png);
+	left: 7%;
+	float: left;
+	z-index: 1;
+	text-indent: -9999px;
+	top: 10px;
+}
+
+#footer .snsicon{
+	position: relative;
+	float: right;
+	widows: 240px;
+	height: 30px;
+	text-align: center;
+	right: 3%;
+	top: 15px;
+}
+
+#footer .snsicon .instagram,
+#footer .snsicon .twitter,
+#footer .snsicon .facebook,
+#footer .snsicon .youtube{
+	position: relative;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-indent: -9999px;
+	margin: 3px 8px 0 8px;
+	opacity: 0.6;
+	transition: opacity 0.15s linear;
+}
+
+#footer .snsicon .twitter:hover,
+#footer .snsicon .facebook:hover,
+#footer .snsicon .youtube:hover,
+#footer .snsicon .instagram:hover{
+	opacity: 1;
+}
+
+#footer .snsicon .twitter{
+	background-image: url("../images/snsicon/twitter.png");
+}
+
+#footer .snsicon .facebook{
+	background-image: url("../images/snsicon/facebook.png");
+}
+
+#footer .snsicon .youtube{
+	background-image: url("../images/snsicon/youtube.png");
+}
+
+#footer .snsicon .instagram{
+	background-image: url("../images/snsicon/instagram.png");
+}

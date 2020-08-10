@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+<title>:: TWICE | Discorgraphy ::</title>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0"><!---->
+<meta name="keywords" content="ITZY,jyp,jypidol" />
+
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<link href="css/discography.css" rel="stylesheet" type="text/css">
+<link href="css/navigator.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" charset="utf-8" src="//code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function() { 
+		$('.snip1477').click(function(){	
+			lightBoxOpen($(this).attr("id"));
+		});
+		$('#lightbox').click(function(){
+			lightBoxClose();
+		});
+	}) 
+	function lightBoxOpen(id){
+		$(document).ready(function(){
+			$('#lightbox').fadeIn(500);
+			$("#lightbox").load(id + ".html");   
+		});
+		$('#lightbox').removeAttr('class');
+		$('#lightbox').attr('class', 'active');
+	}
+	function lightBoxClose(){
+		$('#lightbox').fadeOut(500);
+		$('#lightbox').children().fadeOut(500);	
+	}
+</script>
+
+<style type="text/css">
+nav{background-color:#fff;
+	position: relative;
+
+	}/**/
+.navmenu{
+	margin:0 auto;
+	max-width:1000px;
+	z-index:-11;
+	/*background-color: #06F;*/
+	}	
+
+body{
+	margin:0;
+	padding:0;
+	background:#f4f4f4;}
+	
+#sect-title{
+	background-image:url(images/title-discography.png);
+}
+
+</style>
+</head>
+
+<body>
+<nav>
+	<div class="header clearfix" style="background: none;   box-shadow: 0 1px 7px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.2);">
+	<h1><a href="../../index/twice/index.html" class ="nak">Bernard Park</a></h1>
+	<div class="nav">
+	<input type="checkbox" id="toggle" />
+	<label for="toggle" class="toggle" onclick></label>
+	<ul class="menu">
+	<li><a href="../../profile/twice/profile.html">PROFILE</a></li>
+	<li><a href="../../discography/twice/discography.html">DISCOGRAPHY</a></li>	
+	<li><a href="../../gallery/twice/gallery.html">GALLERY</a></li>
+	<li><a href="../../video/twice/video.html">VIDEO</a></li>			
+	</ul>
+	</div><!-- End of Navigation -->
+	</div><!-- End of Header -->
+</nav>
+
+<div class="container clearfix"> 
+<div class="main">
+<div id="lightbox">
+</div>		
+
+<section>
+<div id="sect-title">DISCOGRAPHY</div>
+<div id="sect-main">
+	<div class="album-list"> 
+		<ul>
+			<li>
+				<figure id="1" class="snip1477"><img src="images/1.jpg" alt="sample38" />
+				<div class="title">
+					<div>
+						<h2>MORE & MORE</h2>
+						<h4>2020-06-01</h4>  
+					</div>
+				</div>
+				<figcaption>
+					<p>
+						트와이스, 6월 1일 아홉 번째 미니 앨범 및 동명 타이틀곡 'MORE & MORE' 발표!<br><br>
+						- 'K팝 대표 걸그룹'이 돌아왔다! 더없이 매력적인 트와이스만의 초강력 청량 에너지!<br>
+						- 타이틀곡 'MORE & MORE', JYP 수장 박진영 작사-편곡! 사랑에 빠질수록 더 원하게 되는...
+					</p>
+				</figcaption>							
+				</figure>
+			</li>
+
+			<li>
+				<figure id="2" class="snip1477"><img src="images/2.jpg" alt="sample91" />
+					<div class="title">
+						<div>
+							<h2>Feel Special</h2>
+							<h4>2019-09-23</h4>  
+						</div>
+					</div>
+					<figcaption>
+						<p>
+							트와이스, 여덟 번째 미니앨범 및 동명 타이틀곡 'Feel Special' 발표!<br><br>
+							"스스로 '특별한 존재'라고 느껴진 순간이 있나요?"<br>
+							아홉 멤버에게 '찬란한 순간'을 선사한 모든 이에게 전하는 선물 같은 이야기...
+						</p>
+					</figcaption>			
+				</figure>
+			</li>
+
+			<li>
+				<figure id="3" class="snip1477"><img src="images/3.jpg" alt="sample35" />
+				<div class="title">
+					<div>
+						<h2>FANCY YOU</h2>
+						<h4>2019-04-22</h4>  
+					</div>
+				</div>
+				<figcaption>
+					<p>
+						트와이스, 일곱 번째 미니앨범 ‘FANCY YOU’ &amp; 타이틀곡 ‘FANCY’ 발표! “새로워진 트와이스에 반하다!”<br><br> 
+						- 타이틀곡 ‘FANCY’, 매혹적인 멜로우 무드 팝 댄스 곡 “I FANCY YOU!” '새로워진 트와이스'를 제시...
+					</p>
+				</figcaption>			
+				</figure>
+			</li>
+		</ul>
+	</div>
+</div><!--sect-main-->
+</section>
+
+<footer>
+	<div id="footer">
+		<div class="kyslogo"><a href="../../main/index.html">KYS Entertainment</a></div>
+		<div class="snsicon">
+			<a href="https://instagram.com/twicetagram" class="instagram">Instagram</a>
+			<a href="https://twitter.com/JYPETWICE" class="twitter">Twitter</a>
+			<a href="https://www.facebook.com/JYPETWICE" class="facebook">Facebook</a>
+			<a href="https://www.youtube.com/jypentertainment" class="youtube">Youtube</a>
+		</div>
+	</div>
+</footer>
+</div><!-- main-->
+</div> <!--container-->
+</body>
+</html>

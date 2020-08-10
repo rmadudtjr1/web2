@@ -1,0 +1,27 @@
+/* 로고효과 */
+#header .logo{
+	transition: transform 0.7s ease; 
+}
+#header .logo:hover{
+	transform: scaleX(-1);
+}
+
+/* 메뉴효과 */
+#header .menu > li > a{
+	transition: all 0.2s linear;
+}
+#header .menu > li > a:hover,
+#header .menu > li > a:focus{
+	color: #ffe6a1;
+	box-shadow: inset 0px 3px #ffe6a1;
+	padding: 45px 18px 34px;
+}
+
+/* 메인로고효과 */
+.mainlogo{
+	transition: all 1s ease;
+}
+
+.mainlogo:hover{
+	transform: scale(1.3);
+	opacity: 0;

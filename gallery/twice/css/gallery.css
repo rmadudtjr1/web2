@@ -1,0 +1,52 @@
+/**/
+
+.gallery{
+	}
+
+.photos{
+	max-width:769px;
+	margin:0 auto; 
+	padding:40px 0;
+	height:100%;
+}
+
+.photos ul {
+	list-style: none outside none; margin:0; padding: 0; /*text-align:center;*/
+	}
+.photos li {
+display:inline-block; margin: 0;
+width:20%; height:auto; float:left;}
+}
+
+li img{
+	float:left;
+max-width:100%;
+}	
+
+/* 태블릿  */
+@media only screen and (max-width: 768px){ 
+
+.photos{
+	max-width:480px;}
+	
+.photos li {
+display:inline-block; margin: 0;
+width:32%; height:auto; float:left;}
+
+
+	
+	}	
+	
+
+/* 모바일 해상도에 적용 */
+@media only screen and (max-width: 479px){
+.photos{
+	max-width:300px;
+	padding:10px 0 40px 0;}
+	
+.photos li {
+display:inline-block; margin: 0;
+width:24%; height:auto; float:left;}
+
+
+	}

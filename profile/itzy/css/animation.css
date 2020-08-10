@@ -1,0 +1,26 @@
+/* 로고효과 */
+#header .logo{
+	transition: transform 0.7s ease; 
+}
+#header .logo:hover{
+	transform: scaleX(-1);
+}
+
+/* 메뉴효과 */
+#header .menu > li > a{
+	transition: all 0.2s linear;
+}
+#header .menu > li > a:hover,
+#header .menu > li > a:focus{
+	color: #f08300;
+	box-shadow: inset 0px 3px #f08300;
+	padding: 45px 18px 34px;
+}
+
+/*썸네일효과*/
+#outer_container .thumbScroller .container .content{
+	transition: opacity 0.3s linear;
+}
+#outer_container .thumbScroller .container .content:hover{
+	opacity: 1;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+<title>:: Bernard Park | Discorgraphy ::</title>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0"><!---->
+<meta name="keywords" content="Bernard Park,jyp" />
+
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<link href="css/discography.css" rel="stylesheet" type="text/css">
+<link href="css/navigator.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" charset="utf-8" src="//code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function() { 
+		$('.snip1477').click(function(){	
+			lightBoxOpen($(this).attr("id"));
+		});
+		$('#lightbox').click(function(){
+			lightBoxClose();
+		});
+	}) 
+	function lightBoxOpen(id){
+		$(document).ready(function(){
+			$("#lightbox").load(id + ".html");   
+		});
+		$('#lightbox').removeAttr('class');
+		$('#lightbox').attr('class', 'active');
+	}
+	function lightBoxClose(){
+		$('#lightbox').removeAttr('class');
+	}
+</script>
+
+<style type="text/css">
+nav{background-color:#fff;
+	position: relative;
+
+	}/**/
+.navmenu{
+	margin:0 auto;
+	max-width:1000px;
+	z-index:-11;
+	/*background-color: #06F;*/
+	}	
+
+body{
+	margin:0;
+	padding:0;
+	background:#f4f4f4;}
+	
+#sect-title{
+	background-image:url(images/title-discography.png);
+}
+
+</style>
+</head>
+
+<body>
+<nav>
+	<div class="header clearfix">
+	<h1><a href="../../index/nak/index.html" class ="nak">Bernard Park</a></h1>
+	<div class="nav">
+	<input type="checkbox" id="toggle" />
+	<label for="toggle" class="toggle" onclick></label>
+	<ul class="menu">
+	<li><a href="../../profile/nak/profile.html">PROFILE</a></li>
+	<li><a href="../../discography/nak/discography.html">DISCOGRAPHY</a></li>	
+	<li><a href="../../gallery/nak/gallery.html">GALLERY</a></li>
+	<li><a href="../../video/nak/video.html">VIDEO</a></li>			
+	</ul>
+	</div><!-- End of Navigation -->
+	</div><!-- End of Header -->
+</nav>
+
+<div class="container clearfix"> 
+<div class="main">
+<div id="lightbox">
+</div>		
+
+<section>
+<div id="sect-title">DISCOGRAPHY</div>
+<div id="sect-main">
+	<div class="album-list"> 
+		<ul>
+			<li>
+				<figure id="1" class="snip1477"><img src="images/1.jpg" alt="sample38" />
+				<div class="title">
+					<div>
+						<h2>Still</h2>
+						<h4>2018-10-10</h4>  
+					</div>
+				</div>
+				<figcaption>
+					<p>
+						Still은 헤어진 연인이 서로의 관점에서 자신들의 감정을 돌아보는 곡으로, 낙준과 f(x)의 루나가 함께 부르는 팝 발라드 장르의 곡이다...
+					</p>
+				</figcaption>							
+				</figure>
+			</li>
+
+			<li>
+				<figure id="2" class="snip1477"><img src="images/2.jpg" alt="sample91" />
+					<div class="title">
+						<div>
+							<h2>탓</h2>
+							<h4>2017-06-28</h4>  
+						</div>
+					</div>
+					<figcaption>
+						<p>
+							버나드 박, 본명 '낙준'으로 활동명 바꾸고 3년여 만에 신곡 ‘탓’ 공개!<br><br>
+							- 6월 28일 정오 디지털 싱글 타이틀 곡 ‘탓’ 발표<br>- ‘탓’, 낙준 본연의 보컬과 어반 R&amp;B 장르의 특색 살린 곡<br>
+							- ‘아르마딜로, 에코브릿지, 에이브’ 유명 작곡진과 협업...
+						</p>
+					</figcaption>			
+				</figure>
+			</li>
+
+			<li>
+				<figure id="3" class="snip1477"><img src="images/3.jpg" alt="sample35" />
+				<div class="title">
+					<div>
+						<h2>니가 보인다</h2>
+						<h4>2016-04-03</h4>  
+					</div>
+				</div>
+				<figcaption>
+					<p>
+						버나드 박 X 혜림(원더걸스), 4월 3일 첫 번째 싱글 '니가 보인다' 발표.<br> <br>
+						- 버나드 박 X 혜림(원더걸스), 첫 번째 콜라보레이션 프로젝트! '니가 보인다' 발표.<br>
+						- 버나드 박 X 혜림(원더걸스), 달달한 러브송 발매 예고...
+					</p>
+				</figcaption>			
+				</figure>
+			</li>
+		</ul>
+	</div>
+</div><!--sect-main-->
+</section>
+
+<footer>
+	<div id="footer">
+		<div class="kyslogo"><a href="../../main/index.html">KYS Entertainment</a></div>
+		<div class="snsicon">
+			<a href="https://www.instagram.com/bernardpark" class="instagram">Instagram</a>
+			<a href="https://twitter.com/NakJoonOfficial" class="twitter">Twitter</a>
+			<a href="https://www.facebook.com/NakJoonOfficial" class="facebook">Facebook</a>
+			<a href="http://www.youtube.com/jypentertainment" class="youtube">Youtube</a>
+		</div>
+	</div>
+</footer>
+</div><!-- main-->
+</div> <!--container-->
+</body>
+</html>

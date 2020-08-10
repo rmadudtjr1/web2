@@ -1,0 +1,527 @@
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css); 
+
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+
+html, body{
+	height: 100%;
+	background: #fff;
+}
+
+body, a{
+	color: #3F3F3F;		
+}
+
+
+.container{
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto;
+/*padding-bottom:30px;	*/
+}
+
+/*.container:after{
+	content: '';
+	display: block;
+	height: 30px;
+	clear: both;
+}
+	*/	
+		
+.main {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	height:100%;
+	display: block;
+}
+
+a{
+overflow:hidden;
+outline:none;
+
+	}
+
+#wrapper{
+display: none;
+}
+
+
+#bg {
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	z-index:0;
+	padding: 0;
+	margin: 0;
+	background-image: url(../images/bg-720.jpg);
+ 	background-size:cover;
+	background-position:bottom center;
+	
+}
+
+section{
+	display:block;
+	width:100%;
+	padding:0;
+		}
+
+section img{
+	max-width: 100%;}
+	
+#sect-title{
+	margin:0 auto;
+	width:100%;
+	height:30px;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:40%;
+	text-indent:-9999px;
+	padding-bottom:20px;}
+	
+
+	
+#sect-main{
+	padding:30px 0;
+	width:100%;
+	background-color:#FFF;
+	height:100%;
+	font-family:'Nanum Gothic',monospace;
+}
+
+		
+
+
+#mainnav{
+	display:block;
+	top:40%;
+	width:100%;
+	height:auto;
+	text-align:center;
+	z-index:-22; 
+	color:#fff;
+	}	
+
+
+#mainnav a{
+	display:inline-block;
+	font-family: 'Oswald', sans-serif;
+	outline: none;
+	color:#fff;
+	text-decoration:none;
+	font-size:18px;
+	padding-left:10px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;/**/
+	/*background-color:#FCC;*/
+	}
+#mainnav a:hover {/*
+	background: rgba(255,255,255,0.6);*/
+	color:#888;
+  opacity: 0.75;
+}
+#mainnav span{
+	display:inline-block;
+	padding:0 8px;
+	outline: none;
+	font-family: 'Oswald', sans-serif;
+	font-size:12px;
+}
+		
+		
+.clear{ clear:both;}
+
+
+
+.mainimg{
+	background: url(images/mainbg.jpg) no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	}
+	
+.fullbox{
+width:85%;
+margin:0 auto;
+}		
+
+
+#list-nav{
+	text-align:center;
+	}
+#list-nav ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+	}
+#list-nav ul li{
+	display:inline-block;
+	width:9px;
+	height:9px;
+	border-radius:9px;
+	margin: 0 2px;
+	background-repeat:no-repeat;
+	}	
+#list-nav a{
+	display:block;
+	width:9px;
+	height:9px;
+/* 	background-color:gray;
+	border-radius:9px; */
+	text-indent:-9999px;
+	background-repeat:no-repeat;
+	line-height:0;
+	}	
+#list-nav a:hover{
+/* 	background-color:lightgray; */
+	background-image:url(../images/list-nav-on.png);
+	}	 	
+	
+.list-nav-on{
+/* 	background-color:lightgray; */
+	width:9px;
+	height:9px;
+	background-image:url(../images/list-nav-on.png);
+	background-repeat:no-repeat;
+	text-indent:-9999px;
+	}	
+.list-nav-off{
+/* 	background-color:gray; */
+	background-image:url(../images/list-nav.png);
+	}
+
+
+
+
+/* Header */
+.codrops-header {
+	text-align: center;
+	
+	overflow: hidden;
+	background-size: auto 100vh;
+}
+
+
+
+.hero {
+	position: absolute;
+
+	overflow: hidden;
+}
+
+.hero__imgwrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.hero__imgwrap::after {
+	content: '';
+	position: absolute;
+	background: rgba(76,0,1,0.1);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+
+.hero__imgwrap .tilt__back,
+.hero__imgwrap .tilt__front {
+	background-size: auto 100vh;
+}
+
+
+
+/* Grid */
+
+
+.grid__img img {
+	max-width: 100%;
+	display: block;
+}
+
+
+
+.grid__img--example-3 .tilt {
+	-webkit-filter: grayscale(100%) brightness(105%) contrast(120%);
+	filter: grayscale(100%) brightness(105%) contrast(120%);
+	-webkit-transition: filter 0.5s, -webkit-filter 0.5s;
+	transition: filter 0.5s, -webkit-filter 0.5s;
+}
+
+.grid__img--example-3 .tilt:hover {
+	-webkit-filter: none;
+	filter: none;
+}
+
+
+.tilt {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.tilt__back,
+.tilt__front {
+	width: 100%;
+	height: 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	
+}
+
+.tilt__back {
+	position: relative;
+}
+
+.tilt__front {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+
+
+
+
+		
+/* �쒕툝由�  */	
+@media only screen and (min-width: 481px) {��
+
+.container {
+	bottom:0;
+	width: 100%;
+	height:70%;
+	/*
+	max-width: 1232px;*/
+	padding:0;
+	margin: auto;
+}
+.main {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+/*	height:100%;*/
+	display: block;
+}
+
+
+
+#bg {
+	background-image: url(../images/bg-720.jpg);
+	background-position:bottom center;	
+}
+section{
+	display:block;
+	width:100%;
+	padding:35px 0 0;
+		}
+		
+		
+
+section img{
+	max-width: 100%;}
+	
+
+#sect-title{
+	margin:0 auto;
+	width:500px;
+	height:40px;
+	background-repeat:no-repeat;
+	background-position:top center;
+	background-size: 50%;
+	text-indent:-9999px;
+	padding-bottom:30px;}
+	
+#sect-main{
+	padding:10px 0;
+	width:100%;
+	background-color:#FFF;
+	height:100%;
+	font-family:'Nanum Gothic',monospace;
+}
+#sect-main h3{ 
+padding:12px 0 10px 0;
+margin:0;
+font-size:13px;
+line-height:20px;
+}
+#sect-main p{ 
+	padding:0;
+font-size:12px;
+line-height:17px;
+}
+.fullbox{
+width:85%;
+margin:0 auto;
+}	
+	
+	
+
+
+	
+	
+}
+
+
+/* ===================�ш린�쒕��� PC�덉씠�꾩썐 Desktop Layout===================== */
+
+@media only screen and (min-width: 769px) {
+html, body{/*background-color:#000;*/}
+
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height:100%;
+	padding:0;
+}
+.main {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	height:100%;
+	padding-bottom:50px;
+	display: block;
+}
+
+#bg {
+	background-image: url(../images/bg-pc.jpg);
+	background-position:top center;
+	
+}
+section{
+	display:block;
+	width:100%;
+	padding:30px 0 0;
+		}
+#sect-title{
+	margin:0 auto;
+	width:500px;
+	height:60px;
+	background-repeat:no-repeat;
+	background-position:top center;
+	background-size: auto;
+	text-indent:-9999px;
+	padding-bottom:20px;}
+	
+#sect-main{
+	padding:50px 0;
+	width:100%;
+	background-color:#FFF;
+	height:100%;
+	font-family:'Nanum Gothic',monospace;
+}
+
+.fullbox{
+	max-width:1000px;
+	width:85%;
+margin:0 auto;
+}		
+	}
+
+#footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 57px;
+	z-index: 1;
+	background-image: none;
+	background-image: url(../images/footerbg.png);
+}
+
+#footer .kyslogo a{
+	position: relative;
+	display: block;
+	width: 168px;
+	height: 38px;
+	background-image: url(../images/kyslogo.png);
+	left: 7%;
+	float: left;
+	z-index: 1;
+	text-indent: -9999px;
+	top: 10px;
+}
+
+#footer .snsicon{
+	position: relative;
+	float: right;
+	widows: 240px;
+	height: 30px;
+	text-align: center;
+	right: 3%;
+	top: 15px;
+}
+
+#footer .snsicon .instagram,
+#footer .snsicon .twitter,
+#footer .snsicon .facebook,
+#footer .snsicon .youtube{
+	position: relative;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-indent: -9999px;
+	margin: 3px 8px 0 8px;
+	opacity: 0.6;
+	transition: opacity 0.15s linear;
+}
+
+#footer .snsicon .twitter:hover,
+#footer .snsicon .facebook:hover,
+#footer .snsicon .youtube:hover,
+#footer .snsicon .instagram:hover{
+	opacity: 1;
+}
+
+#footer .snsicon .twitter{
+	background-image: url("../images/snsicon/twitter.png");
+}
+
+#footer .snsicon .facebook{
+	background-image: url("../images/snsicon/facebook.png");
+}
+
+#footer .snsicon .youtube{
+	background-image: url("../images/snsicon/youtube.png");
+}
+
+#footer .snsicon .instagram{
+	background-image: url("../images/snsicon/instagram.png");
+}
+
+
+
+
+
+
+
+
+	

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="kys엔터테인먼트 있지">
+	<meta name="keywords" content="ITZY, kys, kysidol">
+	<title>:: ITZY ::</title>
+	<script src="../../jquery/jquery-3.5.1.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animation.css">
+	<script>
+		$(function() {
+			$('.img').click(function() {
+				let idx=$(this)[0].id-1;
+				$('.bgimg').fadeOut("slow", function() {
+					$('.bgimg>img').removeAttr('class');
+					$('.bgimg>img')[idx].setAttribute('class', 'active');
+					$('.basic').css('display', 'none');
+					$('.bgimg').fadeIn("slow", function() {
+						$('.active').fadeIn("slow");
+					});
+				});
+				
+			})
+		})
+	</script>
+</head>
+<body>
+	<!-- header -->
+	<div id="header">
+		<div class="logo"><a href="index.html">ITZY</a></div>
+		<ul class="menu">
+			<li><a href="../../video/itzy/video.html">VIDEO</a></li>
+			<li><a href="../../gallery/itzy/gallery.html">GALLERY</a></li>
+			<li><a href="../../discography/itzy/discography.html">DISCOGRAPHY</a></li>
+			<li><a href="../../profile/itzy/profile.html">PROFILE</a></li>
+		</ul>
+	</div>
+	
+	<!-- profile background -->
+	<div id="background">
+		<div class="basic"></div>
+		<div class="mainlogo"></div>
+	</div>
+	
+	<!-- footer -->
+	<div id="footer">
+		<div class="kyslogo"><a href="../../main/index.html">KYS Entertainment</a></div>
+		<div class="snsicon">
+			<a href="https://www.instagram.com/itzy.all.in.us" class="instagram">Instagram</a>
+			<a href="http://www.twitter.com/ITZYOfficial" class="twitter">Twitter</a>
+			<a href="http://www.facebook.com/OfficialITZY" class="facebook">Facebook</a>
+			<a href="https://www.youtube.com/c/ITZY" class="youtube">Youtube</a>
+		</div>
+	</div>
+</body>
+</html>

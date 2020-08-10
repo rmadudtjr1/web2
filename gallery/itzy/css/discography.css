@@ -1,0 +1,165 @@
+/**/
+#album-list{
+	min-width:70%;
+	max-width:700px;
+	margin:0 auto;
+	padding:40px 0 10px 0;
+}
+#album-list img{
+	border:solid 1px #CCCCCC;
+	max-width: 100%;}
+
+#album-list a{
+	}
+
+#album-list ul {
+	list-style: none outside none;
+	margin:0;
+	padding: 0;
+	text-align:center;
+	}
+#album-list li {
+	max-width:90px;
+	display:inline-block;
+	margin: 0 2px;
+	vertical-align: top;
+	}
+.album-title{
+	background-image:url(../images/sns/black.png); 
+	color:#fff;
+	text-align:center;
+	padding-bottom:5px;
+}
+.album-title h2{
+	display:block;
+	padding:2px;
+	float:none;
+	}	
+.album-title p{
+	display:block;
+	float:none;
+	
+	}	
+.tracklist{
+	display:block;
+	padding:10px 0;
+	line-height:1.1em;
+	}
+.tracklist p{
+	font-family: 'Oswald', sans-serif;
+	font-size:15px;
+	
+	}
+.tracklist li{
+	font-family:'Nanum Gothic',monospace;
+	list-style:none;
+	font-size:11px;
+	}
+
+#btn-global{
+	max-width:1000px;
+	width:85%;
+margin:0 auto;
+
+	}
+#btn-global a{
+	width:10px;
+	float:left;
+	display:block;
+	padding:5px;
+	background-image:url(images/title-discography.png);
+	color:#fff;
+	text-align:center;
+	font-size:0.5em;
+	text-decoration:none;
+	margin:0 5px 10px 0;
+	
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	}	
+
+
+	
+#sect-main h3{ 
+padding:20px 0 10px 0;
+margin:0;
+font-size:13px;
+line-height:20px;
+}
+#sect-main p{ 
+	padding:0;
+font-size:12px;
+line-height:17px;
+}
+
+		
+.box-l{width:100%;
+float:none;}
+
+.box-l img {
+	border:solid 1px #CCCCCC;
+	}
+
+
+.box-r{
+width:100%;
+float:none;}		
+	
+
+/* íƒœë¸”ë¦¿  */	
+@media only screen and (min-width: 481px) {ã€€
+#album-list li {
+	max-width:120px;
+	display:inline-block;
+	margin: 0 10px;
+	}
+
+.album-title h2{
+	display:block;
+	padding:15px;
+	float:left;
+	}	
+.album-title p{
+	display:block;
+	margin:20px 20px 0 0;
+	float:right;
+}	
+
+
+	
+}
+
+	
+	
+/* PC í•´ìƒë„ì— ì ìš© */
+@media only screen and (min-width: 769px) {
+
+
+
+#album-list li {
+	max-width:150px;
+	display:inline-block;
+	margin: 0 10px;
+	}
+	
+		
+.box-l{width:35%;
+float:left;}
+.box-r{
+width:62%;
+float:right;}	
+
+
+.album-title h2{
+	display:block;
+	padding:15px;
+	float:left;
+	}	
+.album-title p{
+	display:block;
+	margin:20px 20px 0 0;
+	float:right;
+}	
+
+

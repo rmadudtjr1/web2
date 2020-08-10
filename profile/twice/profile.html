@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="kys엔터테인먼트 트와이스">
+	<meta name="keywords" content="TWICE, kys, kysidol">
+	<title>:: TWICE | Profile ::</title>
+	<script src="../../jquery/jquery-3.5.1.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animation.css">
+	<script>
+		$(function() {
+			$('.img').click(function() {
+				let idx=$(this)[0].id-1;
+				$('.bgimg').fadeOut("slow", function() {
+					$('.bgimg>img').removeAttr('class');
+					$('.bgimg>img')[idx].setAttribute('class', 'active');
+					$('.basic').css('display', 'none');
+					$('.bgimg').fadeIn("slow", function() {
+						$('.active').fadeIn("slow");
+					});
+				});
+				
+			})
+		})
+	</script>
+</head>
+<body>
+	<!-- header -->
+	<div id="header">
+		<div class="logo"><a href="../../index/twice/index.html">TWICE</a></div>
+		<ul class="menu">
+			<li><a href="../../video/twice/video.html">VIDEO</a></li>
+			<li><a href="../../gallery/twice/gallery.html">GALLERY</a></li>
+			<li><a href="../../discography/twice/discography.html">DISCOGRAPHY</a></li>
+			<li><a href="profile.html">PROFILE</a></li>
+		</ul>
+	</div>
+	
+	<!-- profile background -->
+	<div id="background">
+		<div class="basic"></div>
+		<div class="bgimg">
+			<img src="images/profile/large/1.jpg">
+			<img src="images/profile/large/2.jpg">
+			<img src="images/profile/large/3.jpg">
+			<img src="images/profile/large/4.jpg">
+			<img src="images/profile/large/5.jpg">
+			<img src="images/profile/large/6.jpg">
+			<img src="images/profile/large/7.jpg">
+			<img src="images/profile/large/8.jpg">
+			<img src="images/profile/large/9.jpg">
+		</div>
+	</div>
+	
+	<!-- profile thumbnails -->
+	<div id="thumbnails_wrapper">
+		<div id="outer_container">
+			<div class="thumbScroller">
+				<div class="container">
+					<div class="content">
+						<img class="img" id="1" src="images/profile/thumbs/1.jpg">
+					</div>
+					<div class="content">
+						<img class="img" id="2" src="images/profile/thumbs/2.jpg">
+					</div>
+					<div class="content">
+						<img class="img" id="3" src="images/profile/thumbs/3.jpg">
+					</div>
+					<div class="content">
+						<img class="img" id="4" src="images/profile/thumbs/4.jpg">
+					</div>
+					<div class="content">
+						<img class="img" id="5" src="images/profile/thumbs/5.jpg">
+					</div>
+					<div class="content">
+						<img class="img" id="6" src="images/profile/thumbs/6.jpg">
+					</div>
+					<div class="content">
+						<img class="img" id="7" src="images/profile/thumbs/7.jpg">
+					</div>
+					<div class="content">
+						<img class="img" id="8" src="images/profile/thumbs/8.jpg">
+					</div>
+					<div class="content">
+						<img class="img" id="9" src="images/profile/thumbs/9.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- footer -->
+	<div id="footer">
+		<div class="kyslogo"><a href="../../main/index.html">KYS Entertainment</a></div>
+		<div class="snsicon">
+			<a href="https://instagram.com/twicetagram" class="instagram">Instagram</a>
+			<a href="https://twitter.com/JYPETWICE" class="twitter">Twitter</a>
+			<a href="https://www.facebook.com/JYPETWICE" class="facebook">Facebook</a>
+			<a href="https://www.youtube.com/jypentertainment" class="youtube">Youtube</a>
+		</div>
+	</div>
+</body>
+</html>
